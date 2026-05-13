@@ -1,0 +1,88 @@
+.navbarPro{
+position:sticky;
+top:0;
+z-index:1000;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 40px;
+
+backdrop-filter:blur(18px);
+background:rgba(15,23,42,.72);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
+
+.logo{
+font-size:1.7rem;
+font-weight:800;
+color:white;
+}
+
+.logo::first-letter{
+color:#60a5fa;
+}
+
+.links{
+display:flex;
+gap:14px;
+align-items:center;
+}
+
+.links button{
+border:none;
+
+background:rgba(255,255,255,.05);
+
+padding:10px 18px;
+
+border-radius:14px;
+
+cursor:pointer;
+
+font-weight:600;
+
+color:#e2e8f0;
+
+transition:.25s;
+}
+
+.links button:hover{
+background:rgba(59,130,246,.18);
+color:white;
+transform:translateY(-2px);
+}
+
+.perfilBtn{
+border:none;
+
+background:linear-gradient(
+135deg,
+#155DFC,
+#7c3aed
+);
+
+color:white;
+
+padding:12px 20px;
+
+border-radius:14px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.25s;
+
+box-shadow:
+0 10px 25px rgba(21,93,252,.35);
+}
+
+.perfilBtn:hover{
+transform:translateY(-2px) scale(1.03);
+}
+
