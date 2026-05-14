@@ -2244,3 +2244,159 @@ p{
   flex-wrap: wrap;
   margin-top: 24px;
 }
+
+@media (max-width: 768px){
+
+  .navbar{
+    padding: 18px 16px;
+  }
+
+  .navContainerStyle{
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .divNavegacion{
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logoStyle{
+    font-size: 2rem;
+    margin-right: 0;
+  }
+
+  .navLinksStyle{
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navLinksStyle span{
+    font-size: .9rem !important;
+    padding: 10px 14px !important;
+  }
+
+  .profileStyle,
+  .usuarioNavbar{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main{
+    margin: 20px auto;
+    padding: 14px;
+  }
+
+  .hero,
+  .heroSection,
+  .inicioHero{
+    width: 100%;
+    padding: 45px 18px;
+    border-radius: 24px;
+  }
+
+  .hero h1,
+  .tituloHero,
+  .inicioHero h1{
+    font-size: 2.2rem;
+    line-height: 1.15;
+  }
+
+  .resultadoContainer{
+    width: 94%;
+    padding: 32px 20px;
+    border-radius: 24px;
+  }
+
+  .resultadoCarrera{
+    font-size: 2rem;
+  }
+
+  .rankingCard{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .infoGrid{
+    grid-template-columns: 1fr;
+  }
+
+  .correoResultadoForm{
+    flex-direction: column;
+  }
+
+  .correoResultadoForm input,
+  .correoResultadoForm button{
+    width: 100%;
+  }
+
+  .juegos-header{
+    padding: 42px 20px;
+    border-radius: 22px;
+  }
+
+  .juegos-titulo{
+    font-size: 2.5rem;
+  }
+
+  .juegos-lista{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .juego-card{
+    padding: 34px 22px;
+  }
+
+  .puzzle-grid{
+    max-width: 92vw !important;
+  }
+
+  .juegoDetalleContainer{
+    width: 94%;
+    padding: 20px;
+  }
+
+  .triviaOpciones{
+    grid-template-columns: 1fr;
+  }
+
+  .misResultadosPage{
+    padding: 20px;
+  }
+
+  .misResultadosHeader{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .resultadosGrid,
+  .recordsGrid,
+  .statsResultados{
+    grid-template-columns: 1fr;
+  }
+
+  .resultadoHistorialCard{
+    padding: 24px;
+  }
+
+  .loginLayout{
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .loginInfoPanel{
+    display: none;
+  }
+
+  .loginCard{
+    width: 100%;
+    padding: 32px 22px;
+  }
+
+  .footer-nav{
+    gap: 14px;
+  }
+}
