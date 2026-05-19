@@ -90,10 +90,11 @@ function ExploradorTalentos({ onBack }) {
 
   return (
     <div className="juegoDetalleContainer">
-      <h2>Explorador de Talentos</h2>
+      <h2>Explorador de Talentos</h2>  
 
       {!terminado ? (
-        <div className="triviaCard">
+        <div className="triviaCard">        
+
           <p className="triviaProgreso">
             Escenario {indice + 1} de {escenarios.length}
           </p>

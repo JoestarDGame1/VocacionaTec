@@ -108,7 +108,12 @@ function TriviaCarreras({ onBack }) {
       <h2>Trivia de Carreras</h2>
 
       {!terminado ? (
+
+        
         <div className="triviaCard">
+
+                  <button onClick={onBack} className="card-boton">Volver a juegos</button>
+
           <p className="triviaProgreso">
             Pregunta {indice + 1} de {preguntas.length}
           </p>

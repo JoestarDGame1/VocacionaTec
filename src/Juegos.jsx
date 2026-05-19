@@ -8,7 +8,7 @@ export default function Juegos() {
 
   const [juegoActivo, setJuegoActivo] = useState(null);
 
-  if (juegoActivo === "rompecabezas") {
+if (juegoActivo === "rompecabezas") {
   return (
     <Rompecabezas
       onBack={() => setJuegoActivo(null)}
@@ -48,7 +48,7 @@ if (juegoActivo === "logica") {
   return (
     <JuegoIframe
       titulo="Desafío de Lógica"
-      url="https://www.cokitos.com/piramide-de-sumas/play/"
+      url="https://es.educaplay.com/recursos-educativos/1242088-pensamiento_logico.html"
       onBack={() => setJuegoActivo(null)}
     />
   );
@@ -80,7 +80,7 @@ if (juegoActivo === "explorador") {
           </p>
           <button
             className="card-boton"
-            onClick={() => setJuegoActual("puzzle")}
+            onClick={() => setJuegoActivo("rompecabezas")}
           >
             ▷ Jugar
           </button>
@@ -94,7 +94,7 @@ if (juegoActivo === "explorador") {
           </p>
           <button
             className="card-boton"
-            onClick={() => setJuegoActual("trivia")}
+            onClick={() => setJuegoActivo("trivia")}
           >
             ▷ Jugar
           </button>
