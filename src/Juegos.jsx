@@ -1,16 +1,66 @@
 import React, { useState } from "react";
+import JuegoIframe from "./components/JuegoIframe";
 import Rompecabezas from "./Rompecabezas";
 import TriviaCarreras from "./TriviaCarreras";
+import ExploradorTalentos from "./ExploradorTalentos";
 
 export default function Juegos() {
-  const [juegoActual, setJuegoActual] = useState(null);
 
-  if (juegoActual === "puzzle") {
-    return <Rompecabezas onBack={() => setJuegoActual(null)} />;
-  }
-  if (juegoActual === "trivia") {
-    return <TriviaCarreras onBack={() => setJuegoActual(null)} />;
-  }
+  const [juegoActivo, setJuegoActivo] = useState(null);
+
+  if (juegoActivo === "rompecabezas") {
+  return (
+    <Rompecabezas
+      onBack={() => setJuegoActivo(null)}
+    />
+  );
+}
+
+if (juegoActivo === "trivia") {
+  return (
+    <TriviaCarreras
+      onBack={() => setJuegoActivo(null)}
+    />
+  );
+}
+
+if (juegoActivo === "memoria") {
+  return (
+    <JuegoIframe
+      titulo="Memoria Profesional"
+      url="https://www.educaplay.com/learning-resources/18319116-memoria_de_profesiones.html"
+      onBack={() => setJuegoActivo(null)}
+    />
+  );
+}
+
+if (juegoActivo === "sopa") {
+  return (
+    <JuegoIframe
+      titulo="Sopa de Letras Vocacional"
+      url="https://es.educaplay.com/recursos-educativos/3520204-orientacion_vocacional.html"
+      onBack={() => setJuegoActivo(null)}
+    />
+  );
+}
+
+if (juegoActivo === "logica") {
+  return (
+    <JuegoIframe
+      titulo="Desafío de Lógica"
+      url="https://www.cokitos.com/piramide-de-sumas/play/"
+      onBack={() => setJuegoActivo(null)}
+    />
+  );
+}
+
+if (juegoActivo === "explorador") {
+  return (
+    <ExploradorTalentos
+      onBack={() => setJuegoActivo(null)}
+    />
+  );
+}
 
   return (
     <div className="juegos-container">
@@ -58,7 +108,7 @@ export default function Juegos() {
           </p>
           <button
             className="card-boton"
-            onClick={() => alert("Este juego aún está en desarrollo")}
+            onClick={() => setJuegoActivo("memoria")}
           >
             ▷ Jugar
           </button>
@@ -72,7 +122,7 @@ export default function Juegos() {
           </p>
           <button
             className="card-boton"
-            onClick={() => alert("Este juego aún está en desarrollo")}
+            onClick={() => setJuegoActivo("sopa")}
           >
             ▷ Jugar
           </button>
@@ -86,7 +136,7 @@ export default function Juegos() {
           </p>
           <button
             className="card-boton"
-            onClick={() => alert("Este juego aún está en desarrollo")}
+            onClick={() => setJuegoActivo("logica")}
           >
             ▷ Jugar
           </button>
@@ -100,7 +150,7 @@ export default function Juegos() {
           </p>
           <button
             className="card-boton"
-            onClick={() => alert("Este juego aún está en desarrollo")}
+            onClick={() => setJuegoActivo("explorador")}
           >
             ▷ Jugar
           </button>
